@@ -39,10 +39,6 @@
 -   [Store](extensions/Store.md)
 -   [StoreType](extensions/StoreType.md)
 
-## Methods
-
--   [^(_:)](methods/^(_:).md)
-
 # Reference Documentation
 This reference documentation was generated with
 [SourceDocs](https://github.com/eneko/SourceDocs).

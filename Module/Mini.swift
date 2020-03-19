@@ -364,8 +364,6 @@ extension StoreType {
 
 public typealias SubscriptionMap = Mini.SharedDictionary<String, Mini.OrderedSet<Mini.DispatcherSubscription>?>
 
-public prefix func ^ <Root, Value>(keypath: KeyPath<Root, Value>) -> (Root) -> Value
-
 extension Dictionary {
     /// Returns the value for the given key. If the key is not found in the map, calls the `defaultValue` function,
     /// puts its result into the map under the given key and returns it.

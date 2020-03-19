@@ -18,7 +18,7 @@ import Foundation
 
 prefix operator ^
 
-public prefix func ^ <Root, Value>(
+prefix func ^ <Root, Value>(
     _ keypath: KeyPath<Root, Value>
 ) -> (Root) -> Value {
     return { root in root[keyPath: keypath] }
