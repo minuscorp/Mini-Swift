@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
 Pod::Spec.new do |s|
-  s.name             = 'Mini-Swift'
-  s.version          = '3.0.4'
+  s.name             = 'MiniSwift'
+  s.version          = '1.0.0'
   s.swift_version    = '5.0'
-  s.summary          = 'The minimal expression of a Flux architecture in Swift.'
+  s.summary          = 'A minimal Flux-Redux architecture designed for Swift applications.'
 
   s.description      = <<~DESC
-    The minimal expression of a Flux architecture in Swift.
+  A minimal Flux-Redux architecture designed for Swift applications.
 
-    Mini is built with be a first class citizen in Swift applications: macOS, iOS and tvOS applications.
+    Mini is built to make Swift a first class citizen in Redux-Flux architecture for macOS, iOS and tvOS.
     With Mini, you can create a thread-safe application with a predictable unidirectional data flow,
     focusing on what really matters: build awesome applications.
   DESC
 
-  s.homepage         = 'https://github.com/bq/Mini-Swift'
+  s.homepage         = 'https://github.com/minuscorp/Mini-Swift'
   s.license          = { type: 'APACHE', file: 'LICENSE' }
-  s.author           = { 'bq' => 'info@bq.com' }
-  s.source           = { git: 'https://github.com/bq/mini-swift.git', tag: "v#{s.version}" }
-  s.social_media_url = 'https://twitter.com/bqreaders'
+  s.author           = { 'jorge.revuelta' => 'minuscorp@gmail.com' }
+  s.source           = { git: 'https://github.com/minuscorp/Mini-Swift.git', tag: "v#{s.version}" }
+  s.social_media_url = 'https://twitter.com/minuscorp'
 
   s.ios.deployment_target = '11.0'
 
@@ -44,46 +44,46 @@ Pod::Spec.new do |s|
   end
 
   s.subspec('Log') do |ss|
-    ss.ios.dependency('Mini-Swift/Core')
+    ss.ios.dependency('MiniSwift/Core')
     ss.ios.source_files = 'Sources/LoggingService/*.swift'
 
-    ss.osx.dependency('Mini-Swift/Core')
+    ss.osx.dependency('MiniSwift/Core')
     ss.osx.source_files = 'Sources/LoggingService/*.swift'
 
-    ss.tvos.dependency('Mini-Swift/Core')
+    ss.tvos.dependency('MiniSwift/Core')
     ss.tvos.source_files = 'Sources/LoggingService/*.swift'
   end
 
   s.subspec('Test') do |ss|
-    ss.ios.dependency('Mini-Swift/Core')
+    ss.ios.dependency('MiniSwift/Core')
     ss.ios.source_files = 'Sources/TestMiddleware/*.swift'
 
-    ss.osx.dependency('Mini-Swift/Core')
+    ss.osx.dependency('MiniSwift/Core')
     ss.osx.source_files = 'Sources/TestMiddleware/*.swift'
 
-    ss.tvos.dependency('Mini-Swift/Core')
+    ss.tvos.dependency('MiniSwift/Core')
     ss.tvos.source_files = 'Sources/TestMiddleware/*.swift'
   end
   
   s.subspec('MiniTasks') do |ss|
-    ss.ios.dependency('Mini-Swift/Core')
+    ss.ios.dependency('MiniSwift/Core')
     ss.ios.source_files = 'Sources/MiniTasks/*.swift'
 
-    ss.osx.dependency('Mini-Swift/Core')
+    ss.osx.dependency('MiniSwift/Core')
     ss.osx.source_files = 'Sources/MiniTasks/*.swift'
 
-    ss.tvos.dependency('Mini-Swift/Core')
+    ss.tvos.dependency('MiniSwift/Core')
     ss.tvos.source_files = 'Sources/MiniTasks/*.swift'
   end
   
   s.subspec('MiniPromises') do |ss|
-    ss.ios.dependency('Mini-Swift/Core')
+    ss.ios.dependency('MiniSwift/Core')
     ss.ios.source_files = 'Sources/MiniPromises/*.swift'
 
-    ss.osx.dependency('Mini-Swift/Core')
+    ss.osx.dependency('MiniSwift/Core')
     ss.osx.source_files = 'Sources/MiniPromises/*.swift'
 
-    ss.tvos.dependency('Mini-Swift/Core')
+    ss.tvos.dependency('MiniSwift/Core')
     ss.tvos.source_files = 'Sources/MiniPromises/*.swift'
   end
 

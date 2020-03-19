@@ -1,18 +1,18 @@
 # Mini-Swift
 The minimal expression of a Flux architecture in Swift.
 
-Mini is built with be a first class citizen in Swift applications: **macOS, iOS and tvOS** applications.
+Mini is built with be a first class citizen in Swift applications: **macOS, iOS and tvOS**.
 With Mini, you can create a thread-safe application with a predictable unidirectional data flow, focusing on what really matters: build awesome applications.
 
-[![Release Version](https://img.shields.io/github/release/bq/mini-swift.svg)](https://github.com/bq/mini-swift/releases) 
-[![Release Date](https://img.shields.io/github/release-date/bq/mini-swift.svg)](https://github.com/bq/mini-swift/releases)
+[![Release Version](https://img.shields.io/github/release/minuscorp/Mini-Swift.svg)](https://github.com/minuscorp/Mini-Swift/releases) 
+[![Release Date](https://img.shields.io/github/release-date/minuscorp/Mini-Swift.svg)](https://github.com/minuscorp/Mini-Swift/releases)
 [![Pod](https://img.shields.io/cocoapods/v/Mini-Swift.svg?style=flat)](https://cocoapods.org/pods/Mini-Swift)
-[![Platform](https://img.shields.io/cocoapods/p/Mini-Swift.svg?style=flat)](https://cocoapods.org/pods/Mini-Swift)
-[![GitHub](https://img.shields.io/github/license/bq/mini-swift.svg)](https://github.com/bq/mini-swift/blob/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/MiniSwift.svg?style=flat)](https://cocoapods.org/pods/Mini-Swift)
+[![GitHub](https://img.shields.io/github/license/minuscorp/Mini-Swift.svg)](https://github.com/minuscorp/Mini-Swift/blob/master/LICENSE)
 
-[![Build Status](https://travis-ci.org/bq/mini-swift.svg?branch=5.0)](https://travis-ci.org/bq/mini-swift)
-[![codecov](https://codecov.io/gh/bq/mini-swift/branch/master/graph/badge.svg)](https://codecov.io/gh/bq/mini-swift)
-[![Documentation](https://img.shields.io/badge/Documentation-passing-green.svg)](http://opensource.bq.com/mini-swift/docs/)
+[![Build Status](https://travis-ci.org/bq/mini-swift.svg?branch=5.0)](https://travis-ci.org/minuscorp/Mini-Swift)
+[![codecov](https://codecov.io/gh/bq/mini-swift/branch/master/graph/badge.svg)](https://codecov.io/gh/minuscorp/Mini-Swift)
+[![Documentation](https://img.shields.io/badge/Documentation-passing-green.svg)](http://minuscorp.github.io/Mini-Swift/docs/)
 
 ## Requirements
 
@@ -36,7 +36,7 @@ import PackageDescription
 let package = Package(
   name: "MiniSwiftProject",
   dependencies: [
-    .package(url: "https://github.com/bq/mini-swift.git"),
+    .package(url: "https://github.com/minuscorp/Mini-Swift.git"),
   ],
   targets: [
     .target(name: "MiniSwiftProject", dependencies: ["Mini" /*, "MiniPromises, MiniTasks"*/])
